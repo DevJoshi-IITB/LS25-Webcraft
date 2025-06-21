@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#calculator {
+    background-color: black;
+    width: 440px;
+    overflow: hidden;
+    border: none;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+#display {
+    width: 100%;
+    padding: 10px;
+    font-size: 60px;
+    text-align: left;
+    background-color: hsl(0, 0%, 0%);
+    border: none;
+    color: white;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#spKeys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    font-size: 40px;
+    font-family: Helvetica;
+    border: none;
+    margin: 6px;
+    cursor: pointer;
+}
+
+#func {
+    background-color: hsl(0, 0%, 75%);
+}
+
+#func:hover {
+    background-color: hsl(0, 0%, 80%);
+}
+#func:active {
+    background-color: hsl(0, 0%, 90%);
+}
+
+#num {
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+}
+#num:hover {
+    background-color: hsl(0, 0%, 35%);
+    color: white;
+}
+#num:active {
+    background-color: hsl(0, 0%, 45%);
+    color: white;
+}
+#num0 {
+    text-align: left;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    width: 210px;
+    padding-left: 40px;
+    margin-right: 10px;
+}
+#num0:hover {
+    background-color: hsl(0, 0%, 35%);
+    color: white;
+}
+#num0:active {
+    background-color: hsl(0, 0%, 45%);
+    color: white;
+}
+
+#dmas {
+    background-color: hsl(39, 100%, 50%);
+    color: white;
+}
+#dmas:hover {
+    background-color: hsl(39, 100%, 55%);
+    color: white;
+}
+#dmas:active {
+    background-color: hsl(39, 100%, 65%);
+    color: white;
+}
+
+/* responsive */
+@media (max-width: 500px) {
+    #calculator {
+        width: 100%;
+        padding: 10px;
+    }
+    #display {
+        font-size: 40px;
+    }
+    button {
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+    }
+    #num0 {
+        width: 150px;
+        padding-left: 20px;
+    }
+}
