@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
     <div id="calculator">
         <input id="display" readonly>
@@ -13,23 +15,30 @@
             <button class="btn" id="func" onclick="allClear()">AC</button>
             <button class="btn" id="func" onclick="plusMinus()">+/-</button>
             <button class="btn" id="func" onclick="percentage()">%</button>
-            <button class="btn" id="dmas" onclick="appendToDisplay('/')">/</button>
+            <!-- <button class="btn" id="dmas" onclick="backspace()">&larr;</button> -->
+            <button class="btn backspace-btn" id="dmas" onclick="backspace()" title="Backspace">
+                <svg width="40" height="40" viewBox="0 -2 24 24" fill="none">
+                    <path
+                        d="M6 19L2 12L6 5H20C21.1 5 22 5.9 22 7V17C22 18.1 21.1 19 20 19H6ZM9.41 16.59L12 14L14.59 16.59L16 15.17L13.41 12.59L16 10L14.59 8.59L12 11.17L9.41 8.59L8 10L10.59 12.59L8 15.17L9.41 16.59Z"
+                        fill="currentColor" />
+                </svg>
+            </button>
             <button class="btn" id="num" onclick="appendToDisplay('7')">7</button>
             <button class="btn" id="num" onclick="appendToDisplay('8')">8</button>
             <button class="btn" id="num" onclick="appendToDisplay('9')">9</button>
-            <button class="btn" id="dmas" onclick="appendToDisplay('*')">*</button>
+            <button class="btn" id="dmas" onclick="appendToDisplay('/')">/</button>
             <button class="btn" id="num" onclick="appendToDisplay('4')">4</button>
             <button class="btn" id="num" onclick="appendToDisplay('5')">5</button>
             <button class="btn" id="num" onclick="appendToDisplay('6')">6</button>
-            <button class="btn" id="dmas" onclick="appendToDisplay('-')">-</button>
+            <button class="btn" id="dmas" onclick="appendToDisplay('*')">*</button>
             <button class="btn" id="num" onclick="appendToDisplay('1')">1</button>
             <button class="btn" id="num" onclick="appendToDisplay('2')">2</button>
             <button class="btn" id="num" onclick="appendToDisplay('3')">3</button>
-            <button class="btn" id="dmas" onclick="appendToDisplay('+')">+</button>
-        </div><div id="spKeys">
-            <button class="btn" id="num0" onclick="appendToDisplay('0')">0</button>
+            <button class="btn" id="dmas" onclick="appendToDisplay('-')">-</button>
+            <button class="btn" id="num" onclick="appendToDisplay('0')">0</button>
             <button class="btn" id="num" onclick="appendToDisplay('.')">.</button>
             <button class="btn" id="dmas" onclick="calculate()">=</button>
+            <button class="btn" id="dmas" onclick="appendToDisplay('+')">+</button>
         </div>
     </div>
 
@@ -37,4 +46,5 @@
 
     <script src="index.js"></script>
 </body>
+
 </html>
